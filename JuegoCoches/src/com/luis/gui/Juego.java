@@ -2,6 +2,7 @@ package com.luis.gui;
 
 import com.luis.modelo.Coche;
 import com.luis.modelo.Moto;
+import com.luis.modelo.Vehiculo;
 
 public class Juego {
 
@@ -12,7 +13,7 @@ public class Juego {
 		
 		
 		
-		Coche c3=new Coche("Toyota", "Yaris", "Gris", "23456", "Gasoil",
+		Vehiculo c3=new Coche("Toyota", "Yaris", "Gris", "23456", "Gasoil",
 					45, 5.5);
 		Moto m1=new Moto("Honda", "Hornet", "Negra", "123456", "A");
 		
@@ -25,9 +26,35 @@ public class Juego {
 		
 		System.out.println(cons);
 		System.out.println(c1.getMarca());
-		c1.imprimir();
-		c3.imprimir();
-		m1.imprimir();
-			}
+		
+		detalles(c1);
+		detalles(c2);
+		detalles(m1);
+			
+	}
+	
+	public static void detalles(Vehiculo v){
+		
+		if(v instanceof Coche){
+			System.out.println("Es un coche");
+			Coche c=(Coche) v;
+			c.getConsumo();
+		}
+		else if (v instanceof Moto) {
+			System.out.println("Es una moto");
+		}
+		
+		
+		v.imprimir();
+		
+		
+	}
 	
 }
+
+
+
+
+
+
+

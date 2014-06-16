@@ -51,7 +51,7 @@ public class Vehiculo {
 	}
 	
 	public void  imprimir() {
-		System.out.println("Vehiculo de color "+ color +
+		System.out.print("Vehiculo de color "+ color +
 				" de marca "+marca +" y modelo "+modelo);
 		
 	}
