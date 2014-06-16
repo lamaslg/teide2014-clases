@@ -1,6 +1,7 @@
 package com.luis.gui;
 
 import com.luis.modelo.Coche;
+import com.luis.modelo.Moto;
 
 public class Juego {
 
@@ -13,7 +14,7 @@ public class Juego {
 		
 		Coche c3=new Coche("Toyota", "Yaris", "Gris", "23456", "Gasoil",
 					45, 5.5);
-		
+		Moto m1=new Moto("Honda", "Hornet", "Negra", "123456", "A");
 		
 		/*c1.setColor("Rojo");
 		c1.setConsumo(6.5);
@@ -26,6 +27,7 @@ public class Juego {
 		System.out.println(c1.getMarca());
 		c1.imprimir();
 		c3.imprimir();
+		m1.imprimir();
 			}
 	
 }

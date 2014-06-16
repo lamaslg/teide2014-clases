@@ -75,9 +75,10 @@ public class Coche extends Vehiculo {
 		
 		return kmsrec*consumo*precio;		
 	}
-	public void  imprimir() {
-		System.out.println("Coche "+ color+ " consume "+consumo);
+	public void imprimir(){
+		System.out.println("Coche "+color+" que consume "+consumo);
 		
 	}
+	
 	
 }

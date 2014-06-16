@@ -50,7 +50,16 @@ public class Vehiculo {
 		this.numeroSerie = numeroSerie;
 	}
 	
-	
+	public void  imprimir() {
+		System.out.println("Vehiculo de color "+ color +
+				" de marca "+marca +" y modelo "+modelo);
+		
+	}
 	
 	
 }
+
+
+
+
+
