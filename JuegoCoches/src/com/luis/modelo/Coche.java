@@ -1,3 +1,4 @@
+package com.luis.modelo;
 
 public class Coche {
 

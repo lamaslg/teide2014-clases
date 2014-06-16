@@ -1,3 +1,6 @@
+package com.luis.gui;
+
+import com.luis.modelo.Coche;
 
 public class Juego {
 
