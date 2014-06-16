@@ -1,15 +1,15 @@
 package com.luis.modelo;
 
-public class Coche {
+public class Coche extends Vehiculo {
 
+	
 	//Atributos
-	private String color;
 	private String combustible;
 	private int deposito;
 	private double consumo;
 	
 	public Coche(){
-		color="nada";
+		
 		combustible="nada";
 		deposito=0;
 		consumo=0;
@@ -17,25 +17,35 @@ public class Coche {
 	}
 	
 	//Creamos el constructor que permite recibir los argumentos del objeto
-	public Coche(String _color,String _combustible,int _deposito,double _consumo){
-		color=_color;
+	public Coche(String _combustible,int _deposito,double _consumo){
 		combustible=_combustible;
 		deposito=_deposito;
 		consumo=_consumo;
 		
 	}
+	
+	//Constructor con super clase
+	public Coche(String marca, String modelo, String color, String numeroSerie,
+			String combustible, int deposito, double consumo) {
+		super(marca, modelo, color, numeroSerie);
+		this.combustible = combustible;
+		this.deposito = deposito;
+		this.consumo = consumo;
+	}
+
+	
+	
+	
+	
+	
 	//Setters y Getters
-	public String getColor(){
-		return color;
-		
-	}
-	public void setColor(String arg){
-		color=arg;
-	}
 	
 	public String getCombustible() {
 		return combustible;
 	}
+	
+	
+
 	public void setCombustible(String combustible) {
 		this.combustible = combustible;
 	}
